@@ -3,6 +3,7 @@ import React from 'react';
 import NewMeetupForm from '../../components/meetups/NewMeetupForm';
 import {Fragment} from 'react';
 import Head from 'next/head';
+import Layout from '../../components/layout/Layout';
 function NewMeetupPage(){
     const router = useRouter();
 
@@ -22,12 +23,14 @@ function NewMeetupPage(){
     }
     return (
     <Fragment>
+    
     <Head>
         <title>Add a new-meetup</title>
         <meta
         name='description'
         content='Add your own meetups!'/>
     </Head><NewMeetupForm onAddMeetup={addMeetupHandler} />
+    
     </Fragment>
     );
 
